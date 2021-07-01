@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .keiciamas-turinys {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>javascript pirma paskaita</h1>
+    <p>sia savaite javascriptas</p>
+
+    <p class='keiciamas-turinys'>keiciamas turinys</p>
+
+    <script>
+        //1. pasirenkam elementa
+        //2. pasirinkta elementa isvedame i console - atliekami pakeitimai
+        //3. elementai atvaizduojami tiesiai i dizaina
+        // document.querySelector('.keiciamas-turinys').innerHTML = 'pakeistas p elemento tekstas';
+        // console.log(document.querySelector('.keiciamas-turinys')); //
+
+        // document.querySelector('.keiciamas-turinys').innerHTML = 'antra karta pakeistas p elemento tekstas';
+        // console.log(document.querySelector('.keiciamas-turinys')); //
+
+        //kintamieji pavadinimas negali prasidet skaiciumi , . - / ir tt
+
+        var kintamasisPirmas; //kintamojo deklaravimas
+        kintamasisPirmas = 5; // kintamojo priskyrimas
+        console.log('kintamasisPirmas'); // kintamojo isvedimas
+
+        var kintamasisAntras;
+        kintamasisAntras = 'kintamas, kuris saugo..teksta';
+        console.log(kintamasisAntras)
+
+        var kintamasisTrecias;
+        kintamasisTrecias = 'kintamas trecias, kuris saugo...teksta';
+        console.log(kintamasisTrecias);
+
+        var kintamasisKetvirtas;
+        kintamasisKetvirtas = 'bananu salis';
+        var kintamasisPenktas = 'apelsinu salis';
+
+        var kintamasisSestas; 
+        kintamasisSestas = 5.5;
+        console.log(kintamasisSestas);
+
+
+        //tiesa-melas BOOLEAN
+        var tiesa;
+        tiesa = true;
+
+        var melas;
+        melas = false;
+
+        console.log(tiesa);
+        console.log(melas);
+
+        //isvesti dvieju skaitmenu suma
+        //2kintamieji A + B = 3kintamas suma
+
+        var a, b, suma;
+        a = 5;
+        b = 10;
+        suma = a + b; //15
+
+
+        console.log('a ir b suma yra:')
+        console.log(suma)
+
+        //skirtumas
+
+        var skirtumas, sk1, sk2;
+        sk1 = 80;
+        sk2 = 74;
+        skirtumas = sk1 - sk2;
+        console.log('dvieju elementu skirtumas:');
+        console.log(skirtumas);
+
+
+        // daugyba
+        var daugyba, dg1, dg2;
+        dg1 = 80;
+        dg2 = 74;
+        daugyba = dg1 * dg2;
+        console.log('dvieju elementu daugyba:');
+        console.log(daugyba);
+
+        //dalyba
+
+        var dalyba, dl1, dl2;
+        dl1 = 160;
+        dl2 = 40;
+        dalyba = parseInt(dl1 / dl2); // parseInt - imti tik sveikaja dali
+        console.log('dvieju elementu dalyba:');
+        console.log(dalyba);
+
+        //dalyba - liekanos gavyba
+        var liekana;
+        liekana = dg1 % dg2; // procentas reiskia gauname liekana 80 / 74
+        console.log(liekana);
+
+        var k1, k2, k3, k4;
+        k1 = 156;
+        k2 = 415;
+        k3 = 179; 
+        k4 = 665;
+
+        var l1, l2, l3, l4;
+        l1 = k1 % 2; //liekana 0 = lyginis, liekana 1 = nelyginis
+        l2 = k2 % 2;
+        l3 = k3 % 2;
+        l4 = k4 % 2;
+
+
+        //kelimas laipsniu
+        var kelimas;
+        kelimas = dl2 ** 10; // elementas pakeltas ** n-tuoju laipsniu
+        console.log(kelimas);
+
+        //saknis 2laipsnio
+        var saknis;
+        saknis = Math.sqrt(kelimas); 
+        console.log('saknis');
+        console.log(saknis);
+
+        //atemimas ir pridejimas po vieneta
+        var i = 1000;
+        i++;
+
+        console.log(i);
+
+
+    </script>
+</body>
+</html>
